@@ -45,4 +45,19 @@ using Vec3 = XMFLOAT3;
 using Vec4 = XMFLOAT4;
 using Matrix = XMMATRIX;
 
-void HelloEngine();
+//init을 위한 요소
+struct WindowInfo
+{
+    // 출력 윈도우
+    HWND hwnd;
+    //너비
+    int32 width;
+    //높이
+    int32 height;
+    //창모드 여부
+    bool windowed;
+};
+
+// 차후에 해당 변수가 나올것을 의미함.
+extern unique_ptr<class Engine> GEngine;
+

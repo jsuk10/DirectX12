@@ -3,7 +3,6 @@
 
 void Game::init()
 {
-    HelloEngine();
 }
 
 void Game::Update()
